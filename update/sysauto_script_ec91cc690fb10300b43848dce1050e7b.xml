@@ -24,8 +24,7 @@ gr.addQuery('state','!=',3);
 gr.query();
 
 // Write a log message for each overdue NeedIt Task Record
-while(gr.next()){
-		gs.eventQueue('x_58872_needit.overdueNeedItTask',gr,gr.number,'YG');
+while(gr.next()){		gs.eventQueue('x_58872_needit.overdueNeedItTask',gr,gr.number,gs.getUserID());
 	gs.info("Overdue NeedIt Task record = " + gr.number);
 }
 	]]></script>
@@ -34,7 +33,7 @@ while(gr.next()){
         <sys_created_on>2017-10-13 18:13:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ec91cc690fb10300b43848dce1050e7b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Find NeedIt Overdue Tasks</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
@@ -42,7 +41,7 @@ while(gr.next()){
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sysauto_script_ec91cc690fb10300b43848dce1050e7b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-13 21:20:43</sys_updated_on>
+        <sys_updated_on>2017-10-15 23:57:30</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>
